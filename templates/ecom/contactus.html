@@ -5,12 +5,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>LazyCoder || sumit</title>
+  <title>Online Shopping</title>
 
 
 </head>
 
-<body style="background-color: #B3E5FC;">
+<body style="background-color: black;">
 
   {%if request.user.is_authenticated%}
     {% include "ecom/customer_navbar.html" %}
@@ -24,21 +24,15 @@
     <form method="POST">
       <!-- Very Important csrf Token -->
       {% csrf_token %}
-      <div class="form-group">
+      <div class="form-group" style="color: white;">
         <p>
         <h3>{{ form.as_p }}</h3>
         </p>
         <br>
-        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
+        <input type="submit" value="Send Message" class='btn btn-danger btn-lg'>
       </div>
     </form>
   </center>
   {% include "ecom/footer.html" %}
 </body>
-<!--
-developed By : sumit kumar
-facebook : fb.com/sumit.luv
-youtube : youtube.com/lazycoders
--->
-
 </html>
