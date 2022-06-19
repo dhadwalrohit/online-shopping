@@ -365,8 +365,8 @@ body {
 {%endif%}
 
 <script>
-    {%if messages %}
-    {%for message in messages%}
+    {% if messages %}
+    {% for message in messages %}
     alert('{{message}}');
     {%endfor%}
     {%endif%}
