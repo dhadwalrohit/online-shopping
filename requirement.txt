@@ -1,4 +1,4 @@
-Django==3.0.5
+Django==4.0.3
 django-widget-tweaks==1.4.8
 postresql==13.7
 xhtml2pdf
